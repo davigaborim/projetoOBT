@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script src="script.js" defer></script>
+  </head>
+
+  <!--início codigo-->
+  <body>
+    <!--parte de cima (header com foto, busca e filtro)-->
+    <header>
+      <div class="nav-left">
+        <img src="img/profile.png" alt="Profile Picture" class="profile-pic" />
+      </div>
+
+      <div class="search">
+        <span class="search-icon material-symbols-outlined"> search </span>
+        <input
+          type="search"
+          name=""
+          class="search-input"
+          placeholder="Buscar experimento"
+        />
+      </div>
+
+      <div class="filter-sort">
+        <select id="filter-status">
+          <option value="all">Todos</option>
+          <option value="intacto">Intacto</option>
+          <option value="avariado">Avariado</option>
+        </select>
+      </div>
+    </header>
+
+    <!--segunda parte, corpo principal do codigo-->
+
+    <section id="sec2">
+      <div class="img-container" data-modal="modal1">
+        <figure>
+          <img
+            alt="imagem-autoral"
+            src="./img/densidade óssea e muscular.jpeg"
+          />
+          <figcaption>Estudo sobre a perda óssea e tecidos</figcaption>
+          <span class="status avariado">Avariado</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal2">
+        <figure>
+          <img src="./img/radiaçao.jpeg" />
+          <figcaption>Materiais resistentes à radiação espacial</figcaption>
+          <span class="status intacto">Intacto</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal3">
+        <figure>
+          <img src="./img/fluidos.jpeg" />
+          <figcaption>Comportamento de fluidos em microgravidade</figcaption>
+          <span class="status intacto">Intacto</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal4">
+        <figure>
+          <img src="./img/mosca.jpeg" />
+          <figcaption>"Relógio interno" do ritmo biológico</figcaption>
+          <span class="status avariado">Avariado</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal5">
+        <figure>
+          <img src="./img/microorganismos em ambiente extremo.jpeg" />
+          <figcaption>Microrganismos em ambiente extremo</figcaption>
+          <span class="status intacto">Intacto</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal6">
+        <figure>
+          <img src="./img/regeneraçao de tecidos.jpeg" />
+          <figcaption>Regeneração de tecidos em microgravidade</figcaption>
+          <span class="status intacto">Intacto</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal7">
+        <figure>
+          <img src="./img/bacteriapedra.jpeg" />
+          <figcaption>Mineração microbiana</figcaption>
+          <span class="status avariado">Avariado</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal8">
+        <figure>
+          <img src="./img/cristalizaçao de proteinas.jpeg" />
+          <figcaption>Cristalização de proteínas em microgravidade</figcaption>
+          <span class="status intacto">Intacto</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal9">
+        <figure>
+          <img src="./img/rabanetes.jpeg" />
+          <figcaption>Fazenda espacial</figcaption>
+          <span class="status avariado">Avariado</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal10">
+        <figure>
+          <img src="./img/comunicaçao por radio.jpeg" />
+          <figcaption>Comunicação por rádio no espaço</figcaption>
+          <span class="status intacto">Intacto</span>
+        </figure>
+      </div>
+
+      <div class="img-container" data-modal="modal11">
+        <figure>
+          <img src="./img/trajes espaciais.jpeg" />
+          <figcaption>Trajes espaciais aprimorados</figcaption>
+          <span class="status avariado">Avariado</span>
+        </figure>
+      </div>
+      <div class="img-container" data-modal="modal12">
+        <figure>
+          <img src="./img/chip.jpeg" />
+          <figcaption>Tissue chips</figcaption>
+          <span class="status avariado">Avariado</span>
+        </figure>
+      </div>
+    </section>
+
+    <!--final do copia e cola de varios cards/experimentos-->
+
+    <!--pagination-->
+    <div class="pagination">
+      <a href="#"><</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">></a>
+    </div>
+
+    <footer>
+      <img id="logoceam" src="./img/logoceam.png" alt="logo ceam" />
+      <a
+        href="https://br.freepik.com/vetores-gratis/fundo-gradiente-de-galaxia_14658088.htm#query=space&position=6&from_view=search&track=robertav1_2_sidr"
+        >Background por Freepik</a
+      >
+      <img id="logosed" src="./img/logosed.png" alt="logo sed" />
+    </footer>
+
+    <!--tudo isso pra frente vai ser um copy paste dos modias, pra adicionar mais um, é só copiar e colar-->
+    <!-- Modal 1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <img src="./img/densidade óssea e muscular.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Estudo sobre a perda óssea e tecidos</h2>
+          <span class="status avariado">Avariado</span>
+          <img src="img/brasil.png" alt="brasil" class="flag" />
+          <p class="description">
+            Esse experimento investigará quais são os mecanismos moleculares que
+            determinam a perda óssea em microgravidade, examinando as reações
+            dos osteoblastos - células humanas que participam do processo de
+            formação dos ossos - e dos osteoclastos - responsável pela
+            regeneração ou absorção dos tecidos ósseos pelo organismo -, e dessa
+            forma, buscando maneiras mais eficientes de se prevenir a perda
+            óssea de astronautas durante missões espaciais e de pacientes na
+            Terra também.
+          </p>
+          <div class="steps">
+            <h3>Passo a passo para o reparo</h3>
+            <ul id="steps-list-1">
+              <li>
+                <input type="checkbox" /> Verificar o estado das amostras de
+                osteoblastos
+              </li>
+              <li>
+                <input type="checkbox" /> Analisar o estado das amostras de
+                osteoclastos
+              </li>
+              <li>
+                <input type="checkbox" /> Se necessário, substituir as amostras
+                das células e recomeçar o experimento.
+              </li>
+            </ul>
+            <input
+              type="text"
+              id="new-step-1"
+              placeholder="Adicionar novo item..."
+            />
+            <button id="add-step-1">Adicionar</button>
+            <span class="add-item" id="show-input-1"
+              >+ Adicionar novo item...</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <img src="./img/radiaçao.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Materiais resistentes à radiação espacial</h2>
+          <span class="status intacto">Intacto</span>
+          <img src="img/brasil.png" alt="bandeira brasil" class="flag" />
+          <p class="description">
+            Esse experimento busca encontrar os materiais ideias para o bloqueio
+            da radiação proveniente do espaço, a fim de evitar ao máximo a
+            exposição de foguetes, estações, satélites e trajes espaciais a
+            essas ondas e interferências.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <img src="./img/fluidos.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Comportamento de fluidos em microgravidade</h2>
+          <span class="status intacto">Intacto</span>
+          <img src="img/brasil.png" alt="brasil" class="flag" />
+          <p class="description">
+            O objetivo desse estudo é analisar o comportamento dos diferentes
+            tipos de fluidos de diversas viscosidades e composições. Assim,
+            pode-se prever a hidrodinâmica dos fluidos constituintes do
+            funcionamento de foguetes e estações, assim como os fluidos
+            corporais se comportam em seres vivos sobre a ação da
+            microgravidade.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 4 -->
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <img src="./img/mosca.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>"Relógio interno" do ritmo biológico</h2>
+          <span class="status avariado">Avariado</span>
+          <img src="img/brasil.png" alt="brasil" class="flag" />
+          <p class="description">
+            Nesse experimento, os astronautas levarão moscas Drosophila
+            melanogaster (conhecidas como mosca-das-frutas) para que seu
+            material genético seja estudado, a fim de descobrir como a
+            microgravidade influencia o ritmo circadiano — ou seja, o "relógio
+            interno" que regula o ritmo biológico. Esse ciclo é regulado por
+            sinais luminosos, que acabam sendo interrompidos em viagens
+            espaciais, causando muitas mudanças cognitivas. Com este estudo, a
+            ideia é estabelecer uma maneira de monitorar tais mudanças durante
+            viagens espaciais de longa duração.
+          </p>
+          <div class="steps">
+            <h3>Passo a passo para o reparo</h3>
+            <ul id="steps-list-4">
+              <li>
+                <input type="checkbox" />Verificar se as moscas continuam vivas
+                e checar seus estados vitais.
+              </li>
+              <li>
+                <input type="checkbox" />Analisar se o ciclo biológico delas foi
+                alterado de alguma forma pelo incidente.
+              </li>
+              <li>
+                <input type="checkbox" />Repor os nutrientes necessários à
+                vitalidade das moscas.
+              </li>
+            </ul>
+            <input
+              type="text"
+              id="new-step-4"
+              placeholder="Adicionar novo item..."
+            />
+            <button id="add-step-4">Adicionar</button>
+            <span class="add-item" id="show-input-4"
+              >+ Adicionar novo item...</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <img src="./img/microorganismos em ambiente extremo.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Microrganismos em ambiente extremo</h2>
+          <span class="status intacto">Intacto</span>
+          <img src="img/brasil.png" alt="" class="flag" />
+          <p class="description">
+            A análise do comportamento de microrganismos capazes de sobreviver
+            em ambientes extremos – os microrganismos extremófilos. Esse estudo
+            permite se compreender as técnicas de sobrevivência usados por esses
+            seres e formas de aplicá-las de acordo com nossas necessidades, além
+            de nos dar pistas sobre a possível existência de outras formas de
+            vida em outros planetas além da Terra.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <img src="./img/regeneraçao de tecidos.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Regeneração de tecidos em microgravidade</h2>
+          <span class="status intacto">Intacto</span>
+          <img src="img/brasil.png" alt="" class="flag" />
+          <p class="description">
+            Atualmente, muito se estuda sobre novas técnicas de tratamento e
+            regeneração de tecidos humanos. Em vista disso, astronautas observam
+            e avaliam o crescimento de células-tronco em microgravidade - o tipo
+            de célula alvo principal no estudo sobre regeneração de tecidos e
+            órgãos -, a fim de se analisar se há vantagens e maior eficiência em
+            se desenvolver elas fora da Terra.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 7 -->
+    <div id="modal7" class="modal">
+      <div class="modal-content">
+        <img src="./img/bacteriapedra.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Mineração microbiana</h2>
+          <span class="status avariado">Avariado</span>
+          <img src="img/brasil.png" alt="" class="flag" />
+          <p class="description">
+            Esse experimento se consiste em investigar a capacidade de bactérias
+            quebrarem rochas — ou seja, atuarem como mineiros microbianos. Esse
+            processo pode auxiliar futuros exploradores espaciais para extrair
+            elementos valiosos de superfícies planetárias, refinando o regolito
+            para transformá-lo em compostos utilizáveis.
+          </p>
+          <div class="steps">
+            <h3>Passo a passo para o reparo</h3>
+            <ul id="steps-list-7">
+              <li>
+                <input type="checkbox" /> Avaliar o estado vital das colônias de
+                bactérias.
+              </li>
+              <li>
+                <input type="checkbox" /> Avaliar se houve alterações externas
+                nas rochas além das interações das bactérias.
+              </li>
+              <li>
+                <input type="checkbox" /> Substituir as rochas e recomeçar o
+                experimento se necessário de acordo com o estado das bactérias
+                ou das rochas.
+              </li>
+              <li>
+                <input type="checkbox" />Substituir as colônias se necessário.
+              </li>
+            </ul>
+            <input
+              type="text"
+              id="new-step-7"
+              placeholder="Adicionar novo item..."
+            />
+            <button id="add-step-7">Adicionar</button>
+            <span class="add-item" id="show-input-7"
+              >+ Adicionar novo item...</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div id="modal8" class="modal">
+      <div class="modal-content">
+        <img src="./img/cristalizaçao de proteinas.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Cristalização de proteínas em microgravidade</h2>
+          <span class="status intacto">Intacto</span>
+          <img src="img/brasil.png" alt="bandeirabr" class="flag" />
+          <p class="description">
+            Muito se pesquisa atualmente sobre a formação de cristais de
+            proteínas, por serem essenciais para a determinação de suas
+            estruturas tridimensionais. Essas estruturas são cruciais para
+            entender as funções biológicas das proteínas e projetar medicamentos
+            eficazes. Assim, faz-se o estudo de suas cristalizações em
+            microgravidade, já que nesse ambiente elas podem crescer de maneira
+            mais ordenada e uniforme, resultando em estruturas cristalinas de
+            alta qualidade que podem ser mais proveitosas para pesquisas e
+            desenvolvimentos de compostos com elas.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div id="modal9" class="modal">
+      <div class="modal-content">
+        <img src="./img/rabanetes.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Fazenda espacial</h2>
+          <span class="status avariado">Avariado</span>
+          <img src="img/brasil.png" alt="" class="flag" />
+          <p class="description">
+            Os astronautas cuidarão de um projeto de jardinagem em
+            microgravidade que fica na instalação chamada Advanced Plant Habitat
+            (APH). Eles investigarão como rabanetes são capazes de prosperar em
+            cultivos fora da Terra, como parte do experimento Plant Habitat-02,
+            na tentativa de descobrir se o vegetal pode ser um candidato para
+            compor o menu de alimentos de astronautas em viagens de longa
+            duração.
+          </p>
+          <div class="steps">
+            <h3>Passo a passo para o reparo</h3>
+            <ul id="steps-list-9">
+              <li>
+                <input type="checkbox" /> Avaliar o pH e a umidade do solo,
+                assim como o estado das plantas e a temperatura do ambiente
+                dela.
+              </li>
+              <li>
+                <input type="checkbox" /> Corrigir o pH do solo se estiver sido
+                afetado.
+              </li>
+              <li>
+                <input type="checkbox" /> Aumentar ou diminuir a umidade do solo
+                se estiver sido afetado.
+              </li>
+              <li>
+                <input type="checkbox" /> Regular a quantidade de luminosidade
+                incidente nas plantas dependendo do estado delas.
+              </li>
+              <li>
+                <input type="checkbox" /> Estabilizar de volta a temperatura
+                ideal para as espécies cultivadas, se estiver sido alterada.
+              </li>
+              <li>
+                <input type="checkbox" /> Repor os nutrientes necessários à
+                recuperação das plantas.
+              </li>
+            </ul>
+            <input
+              type="text"
+              id="new-step-9"
+              placeholder="Adicionar novo item..."
+            />
+            <button id="add-step-9">Adicionar</button>
+            <span class="add-item" id="show-input-9"
+              >+ Adicionar novo item...</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 10 -->
+    <div id="modal10" class="modal">
+      <div class="modal-content">
+        <img src="./img/comunicaçao por radio.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Comunicação por rádio no espaço</h2>
+          <span class="status intacto">Intacto</span>
+          <img src="img/brasil.png" alt="" class="flag" />
+          <p class="description">
+            Com a crescente exploração espacial do homem nos últimos anos,
+            estamos cada vez mais requerendo aparelhos de comunicação melhores e
+            mais potentes. Dessa forma, a pesquisa sobre a comunicação por rádio
+            no espaço se torna essencial para o desenvolvimento da sociedade
+            fora do planeta Terra.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 11 -->
+    <div id="modal11" class="modal">
+      <div class="modal-content">
+        <img src="./img/trajes espaciais.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Trajes espaciais aprimorados</h2>
+          <span class="status avariado">Avariado</span>
+          <img
+            src="img/brasil.png"
+            alt="brandeira nossa patria amada"
+            class="flag"
+          />
+          <p class="description">
+            Os trajes espaciais usados para caminhadas no espaço, do lado de
+            fora da ISS (ou xEMU, sigla para Exploration Extravehicular Mobility
+            Unit), estão ganhando melhorias — e os novos astronautas da ISS
+            testarão tais trajes da próxima geração, que têm uma nova aparência
+            e também são ainda melhores no controle da temperatura corporal dos
+            usuários.
+          </p>
+          <div class="steps">
+            <h3>Passo a passo para o reparo</h3>
+            <ul id="steps-list-11">
+              <li>
+                <input type="checkbox" />Verificar o sistema de ventilação e
+                respiração dos trajes.
+              </li>
+              <li>
+                <input type="checkbox" />Avaliar o sistema de barragem de
+                radiação dos trajes.
+              </li>
+              <li>
+                <input type="checkbox" />Analisar o sistema regulador da
+                temperatura dos trajes.
+              </li>
+              <li>
+                <input type="checkbox" />Verificar o restante dos sistemas dos
+                trajes.
+              </li>
+              <li>
+                <input type="checkbox" />Verificar o restante dos sistemas dos
+                trajes e testar a resistência externa deles.
+              </li>
+              <li>
+                <input type="checkbox" />Consertar as partes julgadas
+                recuperáveis dos trajes.
+              </li>
+              <li>
+                <input type="checkbox" />Caso o estado de um ou mais trajes
+                estiverem inviáveis (irrecuperáveis), descartar esses trajes
+                afetados.
+              </li>
+            </ul>
+            <input
+              type="text"
+              id="new-step-11"
+              placeholder="Adicionar novo item..."
+            />
+            <button id="add-step-11">Adicionar</button>
+            <span class="add-item" id="show-input-11"
+              >+ Adicionar novo item...</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 12 -->
+    <div id="modal12" class="modal">
+      <div class="modal-content">
+        <img src="./img/chip.jpeg" alt="Image" />
+        <div class="text-container">
+          <h2>Tissue chips</h2>
+          <span class="status avariado">Avariado</span>
+          <img src="img/brasil.png" alt="brasilsilsil" class="flag" />
+          <p class="description">
+            Tissue chips é um projeto formado com a iniciativa patrocinada pelo
+            National Institutes of Health e tem o objetivo de estudar
+            construções similares a órgãos impressos em 3D, mas em dispositivos
+            pequenos e compactos (como chips) na microgravidade. A ideia é que
+            sejam feitos avanços no estudo de potenciais tratamentos de saúde,
+            com os astronautas investigando o uso de tais chips em questões
+            envolvendo tópicos como perda muscular, função pulmonar e barreira
+            hematoencefálica — estrutura de permeabilidade que protege o Sistema
+            Nervoso Central.
+          </p>
+          <div class="steps">
+            <h3>Passo a passo para o reparo</h3>
+            <ul id="steps-list-12">
+              <li><input type="checkbox" />Avaliar a condição dos “órgãos”.</li>
+              <li>
+                <input type="checkbox" />Reparar os órgãos que possuírem danos
+                reversíveis (danos pequenos).
+              </li>
+              <li>
+                <input type="checkbox" />Substituir os órgãos que possuírem
+                danos irreversíveis (danos graves).
+              </li>
+              <li>
+                <input type="checkbox" />Analisar se os testes que estavam
+                decorrentes podem ser retomados ou necessitam de ser
+                recomeçados.
+              </li>
+            </ul>
+            <input
+              type="text"
+              id="new-step-12"
+              placeholder="Adicionar novo item..."
+            />
+            <button id="add-step-12">Adicionar</button>
+            <span class="add-item" id="show-input-12"
+              >+ Adicionar novo item...</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
